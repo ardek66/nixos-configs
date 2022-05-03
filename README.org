@@ -1,0 +1,11 @@
+* NixOS configs
+My current nixos config, as a flake. Messy as fuck, but you might find something interesting here.
+
+To be used with [[https://github.com/ardek66/dotfiles.nix]], which is a module for home-manager that handles dotfiles outside of =home.nix=.
+
+* Note
+If you use =dotfiles.nix=, for updated dotfiles to take effect you must rebuild the system as follows:
+#+begin_src bash
+  nixos-rebuild switch --update-input dotfiles
+#+end_src
+
